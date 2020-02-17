@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rschool - Documentation</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        html{
+            scroll-behavior:smooth;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="toast fixed-top m-3 bg-dark text-light">
+        <div class="toast-body">
+            copied to clipboard
+        </div>
+    </div>
+    
+    <div class="container-fluid py-4">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3 fixed-bottom py-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="#documentation" id="item-documentation" class="list-group-item list-group-item-action">Documentation</a>
+                            <a href="#database" id="item-database" class="list-group-item list-group-item-action">Database Setting</a>
+                            <a href="#class-room" id="item-class-room" class="list-group-item list-group-item-action">Class Room API</a>
+                            <a href="#student" id="item-student" class="list-group-item list-group-item-action">Student API</a>
+                            <a href="#teacher" id="item-teacher" class="list-group-item list-group-item-action">Teacher API</a>
+                            <a href="#absent" id="item-absent" class="list-group-item list-group-item-action">Absent API</a>
+                            <a href="#schedule" id="item-schedule" class="list-group-item list-group-item-action">Schedule API</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row mb-3">
+                                <div class="col-lg-12">
+                                    <h2>Welcome to Rschool Documentation</h2>
+                                    <p class="pt-3 text-secondary">Rschool is an electronic school that is engaged in education and aims to improve the quality of education in <b>INDONESIA</b></p>
+                                    <div class="text-secondary">
+                                        <hr style="width: 100px;float:left;border:1px solid #ddd;margin-right: 20px;">
+                                        <a href="#documentation" class="text-secondary">Documentation</a>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-lg-12">
+                                    <h3 class="mb-3" id="documentation"># Documentation</h3>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <a href="#database" class="text-muted"># <span>Database Setting</span></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <a href="#class-room" class="text-muted"># <span>Class Room API</span></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#class-room" class="text-muted">Get All Data</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#class-room" class="text-muted">Get Single Data By ID</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#class-room" class="text-muted">Create Data</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#class-room" class="text-muted">Update Data by ID</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#class-room" class="text-muted">Delete Data by ID</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <a href="#student" class="text-muted"># <span>Student API</span></a>
+
+                                            <ul>
+                                                <li>
+                                                    <a href="#student" class="text-muted">Get All Data</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#student" class="text-muted">Get Single Data By ID</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#student" class="text-muted">Create Data</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#student" class="text-muted">Update Data by ID</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#student" class="text-muted">Delete Data by ID</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <a href="#teacher" class="text-muted"># <span>Teacher API</span></a>
+
+                                            <ul>
+                                                <li>
+                                                    <a href="#teacher" class="text-muted">Get All Data</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#teacher" class="text-muted">Get Single Data By ID</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#teacher" class="text-muted">Create Data</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#teacher" class="text-muted">Update Data by ID</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#teacher" class="text-muted">Delete Data by ID</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <a href="#absent" class="text-muted"># <span>Absent API</span></a>
+
+                                            <ul>
+                                                <li>
+                                                    <a href="#absent" class="text-muted">Get All Data</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#absent" class="text-muted">Get Single Data By ID</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#absent" class="text-muted">Create Data</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#absent" class="text-muted">Update Data by ID</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#absent" class="text-muted">Delete Data by ID</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <a href="#schedule" class="text-muted"># <span>Schedule API</span></a>
+
+                                            <ul>
+                                                <li>
+                                                    <a href="#schedule" class="text-muted">Get All Data</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#schedule" class="text-muted">Get Single Data By ID</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#schedule" class="text-muted">Create Data</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#schedule" class="text-muted">Update Data by ID</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#schedule" class="text-muted">Delete Data by ID</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Database -->
+                            <div class="row mb-3">
+                                <div class="col-lg-12">
+                                    <h4 class="mb-3" id="database"># Database Setting</h4>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h5>Open file .env</h5>
+                                            <img src="assets/db/env.PNG" alt="env" class="img-fluid">
+                                            <hr>
+                                            <h5>Change the connection</h5>
+                                            <img src="assets/db/db.PNG" alt="Database" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- Class Room API -->
+                            <div class="row mb-3">
+                                <div class="col-lg-12">
+                                    <h4 class="mb-3" id="class-room"># Class Room API</h4>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Get All Data</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-success">GET</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-get-cr">Copy</button>
+                                                </div>
+                                            </div>
+                                            <span class="text-muted">http://localhost:8000/api/v1/class-room</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Get Single Data by ID</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-success">GET</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-single-cr">Copy</button>
+                                                </div>
+                                            </div>
+                                            <span class="text-muted">http://localhost:8000/api/v1/class-room/{ID}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Create Data</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-info">POST</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-create-cr">Copy</button>
+                                                </div>
+                                            </div>
+
+                                            <p>Field</p>
+                                            <ul>
+                                                <li>name(string)</li>
+                                            </ul>
+                                            
+                                            <span class="text-muted">http://localhost:8000/api/v1/class-room</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Update Data by ID</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-info">POST</span>
+                                                    <button class="btn btn-outline-secondary"  id="copy-update-cr">Copy</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <p>Field</p>
+                                            <ul>
+                                                <li>name(string)</li>
+                                            </ul>
+                                            
+                                            <span class="text-muted">http://localhost:8000/api/v1/class-room/{ID}</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Delete Data by ID</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-danger">DELETE</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-delete-cr">Copy</button>
+                                                </div>
+                                            </div>
+                                            <span class="text-muted">http://localhost:8000/api/v1/class-room/{ID}</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- Student API -->
+                            <div class="row mb-3">
+                                <div class="col-lg-12">
+                                    <h4 class="mb-3" id="student"># Student API</h4>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Get All Data</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-success">GET</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-get-st">Copy</button>
+                                                </div>
+                                            </div>
+                                            <span class="text-muted">http://localhost:8000/api/v1/student</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Get Single Data by ID</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-success">GET</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-single-st">Copy</button>
+                                                </div>
+                                            </div>
+                                            <span class="text-muted">http://localhost:8000/api/v1/student/{ID}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Create Data</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-info">POST</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-create-st">Copy</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <p>Fields</p>
+                                            <ul>
+                                                <li>name(string)</li>
+                                                <li>class_room_id(integer)</li>
+                                            </ul>
+                                            
+                                            <span class="text-muted">http://localhost:8000/api/v1/student</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Update Data by ID</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-info">POST</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-update-st">Copy</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <p>Fields</p>
+                                            <ul>
+                                                <li>name(string)</li>
+                                                <li>class_room_id(integer)</li>
+                                            </ul>
+                                            
+                                            <span class="text-muted">http://localhost:8000/api/v1/student/{ID}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Delete Data by ID</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-danger">DELETE</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-delete-st">Copy</button>
+                                                </div>
+                                            </div>
+                                            <span class="text-muted">http://localhost:8000/api/v1/student/{ID}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Teacher API -->
+                            <div class="row mb-3">
+                                <div class="col-lg-12">
+                                    <h4 class="mb-3" id="teacher"># Teacher API</h4>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Get All Data</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-success">GET</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-get-te">Copy</button>
+                                                </div>
+                                            </div>
+                                            <span class="text-muted">http://localhost:8000/api/v1/teacher</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Get Single Data by ID</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-success">GET</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-single-te">Copy</button>
+                                                </div>
+                                            </div>
+                                            <span class="text-muted">http://localhost:8000/api/v1/teacher/{ID}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Create Data</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-info">POST</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-create-te">Copy</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <p>Fields</p>
+                                            <ul>
+                                                <li>name(string)</li>
+                                                <li>study(string)</li>
+                                            </ul>
+                                            
+                                            <span class="text-muted">http://localhost:8000/api/v1/teacher</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Update Data by ID</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-info">POST</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-update-te">Copy</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <p>Fields</p>
+                                            <ul>
+                                                <li>name(string)</li>
+                                                <li>study(string)</li>
+                                            </ul>
+                                            
+                                            <span class="text-muted">http://localhost:8000/api/v1/teacher/{ID}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Delete Data by ID</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-danger">DELETE</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-delete-te">Copy</button>
+                                                </div>
+                                            </div>
+                                            <span class="text-muted">http://localhost:8000/api/v1/teacher/{ID}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Absent API -->
+                            <div class="row mb-3">
+                                <div class="col-lg-12">
+                                    <h4 class="mb-3" id="absent"># Absent API</h4>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Get All Data</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-success">GET</span>
+                                                    <button class="btn btn-outline-secondary"
+                                                    id="copy-get-ab">Copy</button>
+                                                </div>
+                                            </div>
+                                            <span class="text-muted">http://localhost:8000/api/v1/absent</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Get Single Data by ID</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-success">GET</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-single-ab">Copy</button>
+                                                </div>
+                                            </div>
+                                            <span class="text-muted">http://localhost:8000/api/v1/absent/{ID}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Create Data</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-info">POST</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-create-ab">Copy</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <p>Fields</p>
+                                            <ul>
+                                                <li>student_id(integer)</li>
+                                                <li>status(string)</li>
+                                                <li>date(date)</li>
+                                            </ul>
+                                            
+                                            <span class="text-muted">http://localhost:8000/api/v1/absent</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Update Data by ID</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-info">POST</span>
+                                                    <button class="btn btn-outline-secondary"id="copy-update-ab">Copy</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <p>Fields</p>
+                                            <ul>
+                                                <li>student_id(integer)</li>
+                                                <li>status(string)</li>
+                                                <li>date(date)</li>
+                                            </ul>
+                                            
+                                            <span class="text-muted">http://localhost:8000/api/v1/a/{ID}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Delete Data by ID</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-danger">DELETE</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-delete-ab">Copy</button>
+                                                </div>
+                                            </div>
+                                            <span class="text-muted">http://localhost:8000/api/v1/absent/{ID}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Schedule API -->
+                            <div class="row mb-3">
+                                <div class="col-lg-12">
+                                    <h4 class="mb-3" id="schedule"># Schedule API</h4>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Get All Data</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-success">GET</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-get-sc">Copy</button>
+                                                </div>
+                                            </div>
+                                            <span class="text-muted">http://localhost:8000/api/v1/class-room</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Get Single Data by ID</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-success">GET</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-single-sc">Copy</button>
+                                                </div>
+                                            </div>
+                                            <span class="text-muted">http://localhost:8000/api/v1/schedule/{ID}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Create Data</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-info">POST</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-create-sc">Copy</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <p>Fields</p>
+                                            <ul>
+                                                <li>teacher_id(integer)</li>
+                                                <li>class_room_id(integer)</li>
+                                                <li>dt_from(date time)</li>
+                                                <li>dt_to(date time)</li>
+                                            </ul>
+                                            
+                                            <span class="text-muted">http://localhost:8000/api/v1/schedule</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Update Data by ID</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-info">POST</span>
+                                                    <button class="btn btn-outline-secondary" id="copy-update-sc">Copy</button>
+                                                </div>
+                                            </div>
+
+                                            <p>Fields</p>
+                                            <ul>
+                                                <li>teacher_id(integer)</li>
+                                                <li>class_room_id(integer)</li>
+                                                <li>dt_from(date time)</li>
+                                                <li>dt_to(date time)</li>
+                                            </ul>
+                                            
+                                            <span class="text-muted">http://localhost:8000/api/v1/schedule/{ID}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Delete Data by ID</h5>
+                                                <div class="btn-group">
+                                                    <span class="btn btn-danger">DELETE</span>
+                                                    <button class="btn btn-outline-secondary"id="copy-delete-sc">Copy</button>
+                                                </div>
+                                            </div>
+                                            <span class="text-muted">http://localhost:8000/api/v1/schedule/{ID}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
